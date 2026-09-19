@@ -36,11 +36,11 @@ This document tracks the granular development tasks, milestones, subtasks, and p
   - BLAKE3 content hashing and deduplication repository.
 
 ### Milestone 2: Text Ingestion & Memory Extraction Pipeline
-- [ ] **Task 2.1: Content Ingestion, Chunking & Normalization**
+- [x] **Task 2.1: Content Ingestion, Chunking & Normalization**
   - Text and Markdown normalizer (trimming, Unicode normalization, whitespace collapsing).
   - Chunking strategies (sliding window with overlap, header-aware Markdown chunking).
   - Content dedup & chunk reference linking to avoid duplicate storage.
-- [ ] **Task 2.2: Memory Extraction & Provider Abstractions**
+- [x] **Task 2.2: Memory Extraction & Provider Abstractions**
   - Provider trait definitions: `LLMProvider`, `EmbeddingProvider`.
   - Cheap heuristic rule filter to eliminate conversational noise without LLM overhead.
   - Deterministic/Local/Mock LLM and Embedding provider implementation for local-first testing and execution.
