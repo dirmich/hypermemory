@@ -76,10 +76,36 @@ Traditional AI agents suffer from acute memory amnesia: sessions expire, past co
 
 ---
 
-## 🚀 Quick Start
+## 📦 Downloads & Pre-built Binaries
 
-### Installation
+Pre-compiled standalone binaries are available on the [GitHub Releases](https://github.com/dirmich/hypermemory/releases) page for instant execution without needing to install Rust:
 
+| Platform | Architecture | Download Link | Format |
+|---|---|---|---|
+| **macOS** | Apple Silicon (`aarch64`) | [Download macOS Binary](https://github.com/dirmich/hypermemory/releases/download/v0.1.7/hyper-memory-v0.1.7-macos-aarch64.tar.gz) | `.tar.gz` |
+| **Linux** | x86_64 (`gnu`) | [Download Linux Binary](https://github.com/dirmich/hypermemory/releases) | `.tar.gz` |
+| **Windows** | x86_64 (`msvc`) | [Download Windows Binary](https://github.com/dirmich/hypermemory/releases) | `.zip` |
+
+For detailed documentation, refer to the [Complete Usage Guide](docs/usage.md) and [Product Requirements Document](docs/prd.md) ([한국어 PRD](docs/prd-kor.md)).
+
+---
+
+## 🚀 Quick Start & Installation
+
+### Option A: Download Pre-built Binary
+Extract and run directly:
+```bash
+# macOS / Linux
+tar -xvf hyper-memory-*.tar.gz
+chmod +x hyper-memory
+./hyper-memory doctor
+
+# Windows (PowerShell)
+Expand-Archive -Path hyper-memory-*.zip -DestinationPath .
+.\hyper-memory.exe doctor
+```
+
+### Option B: Build from Source
 Ensure Rust 1.80+ is installed, then clone and build:
 
 ```bash
@@ -92,7 +118,10 @@ The executable will be located at `target/release/hyper-memory`.
 
 ---
 
-## 🛠️ CLI Usage Guide
+## 🛠️ Essential Usage Guide
+
+> [!TIP]
+> For the complete documentation with all REST API endpoints, JSON payloads, and Claude Desktop MCP configurations, read the **[docs/usage.md](docs/usage.md)**.
 
 ### 1. Ingest Conversation or Notes
 ```bash
@@ -109,17 +138,27 @@ hyper-memory search --container "my-project" "Rust engine"
 hyper-memory context --container "my-project" "What technologies are we using?"
 ```
 
-### 4. Sync with Obsidian Vault
+### 4. Sync with Obsidian Vault (Two-Way)
 ```bash
-hyper-memory wiki-sync --container "my-project"
+hyper-memory wiki-sync --container "my-project" --vault-path ~/Documents/ObsidianVault
 ```
 
-### 5. System Health Check
+### 5. Start Background REST API Server
+```bash
+hyper-memory start --port 6767
+```
+
+### 6. Run as Anthropic Model Context Protocol (MCP) Stdio Server
+```bash
+hyper-memory mcp
+```
+
+### 7. Run System Health & Diagnosis
 ```bash
 hyper-memory doctor
 ```
 
-### 6. Run Performance & Correctness Benchmark
+### 8. Run Performance & Correctness Benchmark
 ```bash
 hyper-memory benchmark
 ```
