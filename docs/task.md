@@ -87,7 +87,7 @@ This document tracks the granular development tasks, milestones, subtasks, and p
   - Semantic diff extraction converting manual note updates into memory update candidates.
 
 ### Milestone 6: REST API & MCP Server
-- [ ] **Task 6.1: Axum REST API Server**
+- [x] **Task 6.1: Axum REST API Server**
   - Endpoints:
     - `/v1/documents` (Ingest document)
     - `/v1/memories` (CRUD memories, pin, archive)
@@ -97,7 +97,7 @@ This document tracks the granular development tasks, milestones, subtasks, and p
     - `/v1/wiki/sync` & `/v1/wiki/rebuild`
     - `/v1/graph/entity/:id` & `/v1/graph/memory/:id`
   - Structured logging, error responses, and CORS support.
-- [ ] **Task 6.2: Standard MCP (Model Context Protocol) Server**
+- [x] **Task 6.2: Standard MCP (Model Context Protocol) Server**
   - JSON-RPC 2.0 stdio server compliant with Anthropic MCP specifications.
   - Tools implementation: `memory_add`, `memory_search`, `memory_get`, `memory_forget`, `memory_update`, `profile_get`, `wiki_search`, `wiki_get_page`, `wiki_update_page`, `project_context`, `source_get`.
 

@@ -1,6 +1,6 @@
 [package]
 name = "hypermemory"
-version = "0.1.5"
+version = "0.1.6"
 edition = "2021"
 authors = ["David, Shin <dirmich@gmail.com>"]
 description = "Local-first temporal AI memory and knowledge engine with Obsidian two-way sync"
@@ -44,3 +44,4 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 [dev-dependencies]
 tempfile = "3.17"
+tower = { version = "0.5", features = ["util"] }

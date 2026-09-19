@@ -5,6 +5,13 @@ All notable changes to the Hyper Memory project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.6] - 2026-09-19
+### Added
+- Axum REST API server with endpoints: `/health`, `/v1/documents`, `/v1/search`, `/v1/context`, `/v1/memories`, `/v1/profile/:container`, `/v1/wiki/sync`.
+- Cross-origin CORS support and JSON payload request/response models.
+- Standard Anthropic Model Context Protocol (MCP) stdio JSON-RPC 2.0 server (`McpServer`).
+- Complete suite of 11 MCP tools: `memory_add`, `memory_search`, `memory_get`, `memory_forget`, `memory_update`, `profile_get`, `wiki_search`, `wiki_get_page`, `wiki_update_page`, `project_context`, `source_get`.
+
 ## [0.1.5] - 2026-09-19
 ### Added
 - Structured Wiki Intermediate Representation (IR) compiler (`WikiCompiler`, `WikiPageIR`).
