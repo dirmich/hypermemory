@@ -10,3 +10,5 @@
 *.sqlite-shm
 .hyper-memory/
 HyperMemoryVault/
+*.tar.gz
+*.zip
