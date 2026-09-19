@@ -5,6 +5,13 @@ All notable changes to the Hyper Memory project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.5] - 2026-09-19
+### Added
+- Structured Wiki Intermediate Representation (IR) compiler (`WikiCompiler`, `WikiPageIR`).
+- Strict section demarcation preserving human notes outside `<!-- HYPER_MEMORY:AUTO -->` markers.
+- Cross-platform safe atomic vault writer preventing file corruption (`VaultWriter`).
+- Obsidian bidirectional sync engine supporting forward export, reverse import, and `#hypermemory/*` control tags (`ObsidianSyncEngine`).
+
 ## [0.1.4] - 2026-09-19
 ### Added
 - Embedded BM25 Inverted Index Full-Text Search (`BM25InvertedIndex`).

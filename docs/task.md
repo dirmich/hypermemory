@@ -73,15 +73,15 @@ This document tracks the granular development tasks, milestones, subtasks, and p
   - Context compiler with strict token budgeting ($\le 2000$ tokens) for Agent consumption.
 
 ### Milestone 5: Obsidian Vault & Wiki Compiler
-- [ ] **Task 5.1: Wiki Intermediate Representation (IR) & Vault Generation**
+- [x] **Task 5.1: Wiki Intermediate Representation (IR) & Vault Generation**
   - Deterministic IR compiler generating entity, decision, and daily note data.
   - Markdown page generator adhering to Obsidian Vault layout (`People/`, `Projects/`, `Technologies/`, `Decisions/`, `Daily/`, `Sources/`).
   - Structured Frontmatter and wikilinks (`[[Page Name]]`).
-- [ ] **Task 5.2: Strict Section Demarcation & Safe Atomic Writes**
+- [x] **Task 5.2: Strict Section Demarcation & Safe Atomic Writes**
   - Enforcement of `<!-- HYPER_MEMORY:AUTO:BEGIN -->` and `<!-- HYPER_MEMORY:AUTO:END -->`.
   - Preservation of user-authored sections and manual notes.
   - Atomic writing via temporary files to prevent data corruption.
-- [ ] **Task 5.3: Bidirectional Obsidian Sync & Change Detection**
+- [x] **Task 5.3: Bidirectional Obsidian Sync & Change Detection**
   - File watcher / diff engine for markdown changes.
   - Control tag parser (`#hypermemory/pin`, `#hypermemory/archive`, `#hypermemory/no-ai`).
   - Semantic diff extraction converting manual note updates into memory update candidates.
