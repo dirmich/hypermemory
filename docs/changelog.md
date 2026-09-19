@@ -5,6 +5,11 @@ All notable changes to the Hyper Memory project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.9] - 2026-09-19
+### Added
+- Complete Korean usage guide (`docs/usage-kor.md`) explaining CLI commands, REST API integration, MCP configuration, and Obsidian Vault bidirectional synchronization.
+- Linked Korean usage guide in `README.md`.
+
 ## [0.1.8] - 2026-09-19
 ### Added
 - Comprehensive English usage guide (`docs/usage.md`) covering CLI commands, REST API endpoints with JSON examples, MCP setup, and Obsidian Vault integration.

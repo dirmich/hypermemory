@@ -86,7 +86,7 @@ Pre-compiled standalone binaries are available on the [GitHub Releases](https://
 | **Linux** | x86_64 (`gnu`) | [Download Linux Binary](https://github.com/dirmich/hypermemory/releases) | `.tar.gz` |
 | **Windows** | x86_64 (`msvc`) | [Download Windows Binary](https://github.com/dirmich/hypermemory/releases) | `.zip` |
 
-For detailed documentation, refer to the [Complete Usage Guide](docs/usage.md) and [Product Requirements Document](docs/prd.md) ([한국어 PRD](docs/prd-kor.md)).
+For detailed documentation, refer to the [Complete Usage Guide](docs/usage.md) ([한국어 사용설명서](docs/usage-kor.md)) and [Product Requirements Document](docs/prd.md) ([한국어 PRD](docs/prd-kor.md)).
 
 ---
 
