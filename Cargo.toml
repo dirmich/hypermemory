@@ -1,6 +1,6 @@
 [package]
 name = "hypermemory"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 authors = ["David, Shin <dirmich@gmail.com>"]
 description = "Local-first temporal AI memory and knowledge engine with Obsidian two-way sync"

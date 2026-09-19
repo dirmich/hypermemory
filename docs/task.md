@@ -47,14 +47,14 @@ This document tracks the granular development tasks, milestones, subtasks, and p
   - Memory extraction pipeline: parsing atomic facts, decisions, entities, relations, confidence, and importance.
 
 ### Milestone 3: Temporal Memory Graph & Consolidation
-- [ ] **Task 3.1: Temporal State Machine & Fact Updating**
+- [x] **Task 3.1: Temporal State Machine & Fact Updating**
   - Fact supersession logic (`is_latest = false`, `valid_until` setting when new contradicting or updated memory arrives).
   - Memory relation graph: `UPDATES`, `EXTENDS`, `DERIVES`, `CONTRADICTS`, `SUPPORTS`.
   - Contradiction resolution and conflict logging.
-- [ ] **Task 3.2: Memory Lifecycle & Tier Management**
+- [x] **Task 3.2: Memory Lifecycle & Tier Management**
   - Hot/Warm/Cold tier state transitions based on recency, access count, and pinning (`is_pinned`).
   - Access tracking and recency decay for temporary/episodic memories.
-- [ ] **Task 3.3: Memory Consolidation Engine**
+- [x] **Task 3.3: Memory Consolidation Engine**
   - Identification of repeated/similar memories for entity consolidation.
   - Canonical memory synthesis with provenance links (`derived_from`).
 
