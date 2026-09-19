@@ -5,6 +5,14 @@ All notable changes to the Hyper Memory project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4] - 2026-09-19
+### Added
+- Embedded BM25 Inverted Index Full-Text Search (`BM25InvertedIndex`).
+- Vector storage with cosine similarity and FP32/INT8 quantization for low RAM footprint (`VectorIndex`, `StoredVector`).
+- Query classification and routing (`QueryRouter`).
+- Hybrid search scoring combining lexical, vector, recency, importance, and confidence (`HybridSearchEngine`).
+- Strict token budget context compiler generating compact markdown prompts for AI agents (`ContextCompiler`).
+
 ## [0.1.3] - 2026-09-19
 ### Added
 - Temporal update engine with automatic fact supersession (`is_latest = false`), contradiction detection, and relation edges (`TemporalUpdateEngine`).

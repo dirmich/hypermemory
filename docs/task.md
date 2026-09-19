@@ -59,14 +59,14 @@ This document tracks the granular development tasks, milestones, subtasks, and p
   - Canonical memory synthesis with provenance links (`derived_from`).
 
 ### Milestone 4: Multi-Engine Retrieval & Search Pipeline
-- [ ] **Task 4.1: Inverted Index Full-Text Search (FTS)**
+- [x] **Task 4.1: Inverted Index Full-Text Search (FTS)**
   - Embedded FTS (BM25 tokenization, term frequency, document frequency).
   - Fast prefix and term lookup over canonical memories and documents.
-- [ ] **Task 4.2: Vector Storage & Approximate Nearest Neighbor (ANN)**
+- [x] **Task 4.2: Vector Storage & Approximate Nearest Neighbor (ANN)**
   - Vector storage with cosine similarity and Euclidean distance.
   - Quantization support (FP32, FP16, and INT8 simulated dot-product quantization).
   - In-memory vector index with embedding cache.
-- [ ] **Task 4.3: Query Router, Hybrid Reranker & Context Compiler**
+- [x] **Task 4.3: Query Router, Hybrid Reranker & Context Compiler**
   - Query classification (`Profile`, `Exact`, `Lexical`, `Semantic`, `Temporal`, `Hybrid`).
   - Weighted hybrid scoring: $w_{lex} + w_{sem} + w_{rec} + w_{imp} + w_{conf}$.
   - Graph 1-hop / 2-hop expansion.
