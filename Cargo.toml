@@ -1,0 +1,46 @@
+[package]
+name = "hypermemory"
+version = "0.1.1"
+edition = "2021"
+authors = ["David, Shin <dirmich@gmail.com>"]
+description = "Local-first temporal AI memory and knowledge engine with Obsidian two-way sync"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "hyper-memory"
+path = "src/main.rs"
+
+[lib]
+name = "hypermemory"
+path = "src/lib.rs"
+
+[dependencies]
+# Async Runtime & Web Framework
+tokio = { version = "1.43", features = ["full"] }
+axum = { version = "0.8", features = ["macros"] }
+tower-http = { version = "0.6", features = ["cors", "trace"] }
+async-trait = "0.1"
+
+# Serialization & Data Formats
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.13", features = ["v4", "serde"] }
+
+# Storage & Embedded Database (bundled for cross-platform Windows, macOS, Linux)
+rusqlite = { version = "0.33", features = ["bundled", "chrono", "serde_json"] }
+parking_lot = "0.12"
+tempfile = "3.17"
+
+# Hashing & String Processing
+blake3 = "1.5"
+regex = "1.11"
+unicode-normalization = "0.1"
+
+# CLI & Tracing
+clap = { version = "4.5", features = ["derive", "env"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+tempfile = "3.17"
