@@ -1,1 +1,3 @@
-// CLI module
+pub mod commands;
+
+pub use commands::*;

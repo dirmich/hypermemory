@@ -102,10 +102,10 @@ This document tracks the granular development tasks, milestones, subtasks, and p
   - Tools implementation: `memory_add`, `memory_search`, `memory_get`, `memory_forget`, `memory_update`, `profile_get`, `wiki_search`, `wiki_get_page`, `wiki_update_page`, `project_context`, `source_get`.
 
 ### Milestone 7: CLI Interface, Benchmarking & Comprehensive Validation
-- [ ] **Task 7.1: CLI Implementation (`hyper-memory`)**
+- [x] **Task 7.1: CLI Implementation (`hyper-memory`)**
   - Subcommands: `start`, `status`, `add`, `search`, `context`, `wiki sync`, `doctor`, `benchmark`.
-- [ ] **Task 7.2: Benchmark Suite & Performance Verification**
+- [x] **Task 7.2: Benchmark Suite & Performance Verification**
   - Recall, latency, deduplication rate, memory footprint, and Obsidian preservation benchmarks.
-- [ ] **Task 7.3: Documentation & README**
+- [x] **Task 7.3: Documentation & README**
   - Elaborate README showcasing Hyper Memory's greatest strengths (Local-first, Temporal Graph, Obsidian Two-way Sync, Token Budgeting).
   - Final integration testing across REST, MCP, and CLI.

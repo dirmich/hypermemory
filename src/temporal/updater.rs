@@ -35,8 +35,21 @@ impl TemporalUpdateEngine {
 
             // Detection of supersession / update:
             // e.g., both talk about database choice or technology preference, and new indicates a change
-            let is_replacement = (new_text_lower.contains("instead of") && new_text_lower.contains(&old_text_lower))
-                || (new_text_lower.contains("대신") || new_text_lower.contains("바꾸") || new_text_lower.contains("switched to") || new_text_lower.contains("moved to"))
+            let has_change_keywords = new_text_lower.contains("instead of")
+                || new_text_lower.contains("switched")
+                || new_text_lower.contains("replaced")
+                || new_text_lower.contains("moved to")
+                || new_text_lower.contains("대신")
+                || new_text_lower.contains("바꾸")
+                || new_text_lower.contains("이전");
+
+            // Check if old memory shares key entities/tokens with new memory
+            let old_tokens: Vec<&str> = old_text_lower.split_whitespace().collect();
+            let shares_topic = old_tokens
+                .iter()
+                .any(|t| t.len() > 3 && new_text_lower.contains(*t));
+
+            let is_replacement = (has_change_keywords && shares_topic)
                 || (old_memory.memory_type == new_memory.memory_type
                     && (new_text_lower.contains("use") && old_text_lower.contains("use"))
                     && old_text_lower != new_text_lower);

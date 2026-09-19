@@ -5,6 +5,12 @@ All notable changes to the Hyper Memory project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.7] - 2026-09-19
+### Added
+- Unified CLI binary (`hyper-memory`) with subcommands: `start`, `mcp`, `add`, `search`, `context`, `wiki-sync`, `doctor`, `benchmark`.
+- Automated performance and recall benchmark suite measuring ingestion speed (~1.3ms), dedup rate (100%), hybrid search latency (~1.3ms), and temporal fact supersession.
+- Comprehensive `README.md` documenting core strengths: Persistent AI Memory + Living Wiki, Temporal Graph with Fact Supersession, Zero Token Waste, Cross-platform Local-First engine, and Universal MCP / REST interoperability.
+
 ## [0.1.6] - 2026-09-19
 ### Added
 - Axum REST API server with endpoints: `/health`, `/v1/documents`, `/v1/search`, `/v1/context`, `/v1/memories`, `/v1/profile/:container`, `/v1/wiki/sync`.
